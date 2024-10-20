@@ -12,7 +12,7 @@ function App () {
         <>
             <div className="body">
                 <Header/>
-                
+                <TileList/>
             </div>
         </>
     )
