@@ -20,12 +20,17 @@ body,h1,h2,h3,h4,h5,h6,div,a,span,button,p {
 }
 
 .button {
+    cursor: pointer;
+    box-shadow: 1px 1px 1px grey;
+    border: 1px solid grey;
+    font-weight: bold;
+    text-transform: capitalize;
     border-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    color: rgba(233, 123, 123, 0.76);
+    color: white;
     background-color: rgb(23, 28, 97);
 }
 

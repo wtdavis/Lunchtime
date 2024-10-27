@@ -22,6 +22,11 @@
     /* background-color: rgb(173, 160, 142); */
 }
 
+.header-button:hover {
+    box-shadow: 2px 2px 2px lightgrey;
+    cursor: pointer;
+}
+
 .header-button {
     margin: 0.15rem;
     padding: 0.15rem;
