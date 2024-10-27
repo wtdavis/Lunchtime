@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react"
 import StudentTile from "../StudentTile/StudentTile"
+import "./tile-list.css"
+
 
 function TileList () {
     
