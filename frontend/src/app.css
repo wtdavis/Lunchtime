@@ -8,7 +8,11 @@ body,h1,h2,h3,h4,h5,h6,div,a,span,button,p {
     text-decoration: none;
     /* overflow: hidden; */;
     --button-border-radius: 5px;
-    --button-background-color: 
+    --midblue: rgb(23, 28, 97);
+    --greyblue: rgb(49, 53, 100);
+    --burgundy: rgb(82, 0, 0);
+    
+
 }
 
 .body {

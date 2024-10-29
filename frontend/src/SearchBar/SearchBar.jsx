@@ -6,6 +6,9 @@ function SearchBar () {
 
     return (
         <>
+            <form>
+                <input className="search-input" type="text"/>
+            </form>
         </>
 
 
