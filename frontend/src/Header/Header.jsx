@@ -11,6 +11,8 @@ function Header () {
                 <HeaderNav/>
                 <SearchBar/>
                 <SearchBar/>
+                <SearchBar/>
+
 
             </div>
         </>
