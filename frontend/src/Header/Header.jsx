@@ -25,6 +25,7 @@ function Header () {
 
                 <SearchBar/>
 
+                <SearchBar/>
 
                 <SearchBar/>
 
