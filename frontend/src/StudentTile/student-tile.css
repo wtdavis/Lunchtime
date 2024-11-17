@@ -21,8 +21,8 @@
     height: 4rem;
 }
 
-.student-tile-toggle:selected {
-    
+.student-tile-toggle-checked {
+    background-color: var(--bluegrey)
 }
 
 .student-tile-name {
