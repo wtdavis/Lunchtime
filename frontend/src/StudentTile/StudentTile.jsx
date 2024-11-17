@@ -1,6 +1,13 @@
 import "./student-tile.css"
 
 function StudentTile (name, key) {
+
+    const [toggleStatus, setToggleStatus] = useState("student-tile-toggle")
+
+    function handleToggle () {
+
+    }
+
     return (
         <>
             <div className="student-tile student-name-tile" key={key}>
