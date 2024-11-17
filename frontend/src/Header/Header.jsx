@@ -10,25 +10,7 @@ function Header () {
                 <h2 className="header-title">Food!Food!Food!</h2>
                 <HeaderNav/>
                 <SearchBar/>
-                <SearchBar/>
-                <SearchBar/>
-                <SearchBar/>
-                <SearchBar/>
-                <SearchBar/>
-                <SearchBar/>
-                <SearchBar/>
-                <SearchBar/>
-                <SearchBar/>
-
-                <SearchBar/>
-                <SearchBar/>
-
-                <SearchBar/>
-                <SearchBar/>
-
-                <SearchBar/>
-
-                <SearchBar/>
+                
 
             </div>
         </>

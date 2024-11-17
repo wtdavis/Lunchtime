@@ -11,7 +11,6 @@ function SearchBar () {
             </form>
         </>
 
-
     )
 
 
