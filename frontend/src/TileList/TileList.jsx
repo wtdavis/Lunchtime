@@ -8,7 +8,7 @@ function TileList () {
     const [studentList, setStudentList] = useState(["john", "james", "sarah", "marie"])
     
     let tileList = function populateStudentList () {
-        console.log(studentList)
+        // console.log(studentList)
         let listArr = []
         for (let i=0; i<studentList.length; i++) {
             listArr.push(StudentTile(studentList[i], i))
@@ -16,7 +16,7 @@ function TileList () {
         return listArr
     }
 
-    console.log(tileList())
+    // console.log(tileList())
     
 
     return (

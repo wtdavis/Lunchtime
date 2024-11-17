@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react"
 import "./student-tile.css"
 
 function StudentTile (name, key) {
@@ -11,6 +12,10 @@ function StudentTile (name, key) {
             setToggleStatus("student-tile-toggle")
         }
     }
+
+    useEffect(()=> {
+        
+    }, [handleToggle])
 
     return (
         <>
