@@ -21,6 +21,10 @@
     height: 4rem;
 }
 
+.student-tile-toggle:selected {
+    
+}
+
 .student-tile-name {
     
 }
