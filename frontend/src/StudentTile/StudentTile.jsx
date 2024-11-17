@@ -3,13 +3,21 @@ import "./student-tile.css"
 
 function StudentTile (name, key) {
 
-    const [toggleStatus, setToggleStatus] = useState("student-tile-toggle")
+    const [toggleStatus, setToggleStatus] = useState("unchecked")
 
     function handleToggle () {
-        if (toggleStatus==="student-tile-toggle") {
-            setToggleStatus("student-tile-toggle-checked")
+        const toggle = document.querySelector("#student-tile-toggle")
+        if (toggleStatus==="unchecked") {
+            console.log("check")
+            toggle.classList.remove("student-tile-toggle")
+            toggle.classList.add("student-tile-toggle-checked")
+            setToggleStatus("checked")
+
         } else {
-            setToggleStatus("student-tile-toggle")
+            console.log("uncheck")
+            toggle.classList.remove("student-tile-toggle-checked")
+            setToggleStatus("unchecked")
+            toggle.classList.remove("student-tile-toggle")
         }
     }
 
@@ -21,7 +29,7 @@ function StudentTile (name, key) {
         <>
             <div className="student-tile student-name-tile" key={key}>
                 <p className="student-tile-name student-tile-element">This is {name}'s student tile</p>
-                <div className="button student-tile-toggle student-tile-element" onClick={handleToggle}>button
+                <div id="student-tile-toggle" className="button student-tile-toggle student-tile-element" onClick={handleToggle}>button
                     <div className=" button student-tile-toggle-indicator"></div>
                 </div>
             </div>
