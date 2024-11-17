@@ -5,7 +5,11 @@ function StudentTile (name, key) {
     const [toggleStatus, setToggleStatus] = useState("student-tile-toggle")
 
     function handleToggle () {
-        if (toggleStatus==)
+        if (toggleStatus==="student-tile-toggle") {
+            setToggleStatus("student-tile-toggle-checked")
+        } else {
+            setToggleStatus("student-tile-toggle")
+        }
     }
 
     return (
