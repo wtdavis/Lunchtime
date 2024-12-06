@@ -7,19 +7,6 @@ app.get('/', (req, res) => {
 }
 )
 
-app.
-app.
-aoo
-adadf
-asdfkjasdf
-fucuuuuuuu
-1
-2
-3
-4
-5
-6
 
-67
-24143
+
 app.listen(3000)
