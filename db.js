@@ -9,6 +9,6 @@ const connection = mysql.createConnection({
 
 connection.connect();
 
-connection.query();
+connection.query("");
 
 connection.end();
