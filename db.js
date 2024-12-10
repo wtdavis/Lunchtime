@@ -22,7 +22,7 @@ export function dbQuery (name, status) {
 
     connection.connect();
     
-    connection.query();
+    connection.query("");
     
     connection.end();
 }
