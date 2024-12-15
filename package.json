@@ -2,6 +2,7 @@
   "name": "lunchtime",
   "version": "1.0.0",
   "main": "app.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dbSetup": "dbSetup.js"
@@ -11,7 +12,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "expressjs": "^1.0.1"
+    "expressjs": "^1.0.1",
+    "mysql2": "^3.11.5"
   },
   "dependencies": {
     "express": "^4.21.1"

@@ -1,12 +1,14 @@
-const express = require('express')
-const { dbQuery } = require('./db')
+// const express = require('express')
+import express from 'express'
+import { dbQuery, dbSetup, dbTest } from './db.js'
 
 
 const app = express()
-
 app.get('/', (req, res) => {
-    dbQuery(req.studentFname, req.studentLName)
-    res.send("hello from expresss")
+    dbSetup();
+   let test = dbTest();
+    res.test = test;
+    res.send()
 }
 )
 
