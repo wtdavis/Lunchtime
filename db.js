@@ -12,6 +12,7 @@ const lunchtimeConnectionObj = {
 4
 5
 1
+2
 export function dbUserSetup () {
     const connection = mysql.createConnection(lunchtimeConnectionObj)
 } 
