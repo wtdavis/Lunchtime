@@ -15,7 +15,7 @@ export function addUser (username, password) {
     if (checkUser) {
         // return (error)
     } else {
-
+        connection.query(`INSERT `)
     }
 }
 
