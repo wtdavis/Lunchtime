@@ -9,9 +9,12 @@ const lunchtimeConnectionObj = {
 
 export function dbUserSetup () {
     const connection = mysql.createConnection(lunchtimeConnectionObj)
+    connection.connect();
+    connection.query(`CREATE TABLE users (id index, username varchar(255), hash varchar(255), admin boolean`)
+    connection.query(`INSERT INTO users (username, admin) VALUES ()`)
 } 
 
-export function dbSetup () {
+export function dbStudentsSetup () {
         const connection = mysql.createConnection(lunchtimeConnectionObj)
     connection.connect()
     // connection.query()

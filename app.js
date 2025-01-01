@@ -1,11 +1,11 @@
 // const express = require('express')
 import express from 'express'
-import { dbQuery, dbSetup, dbTest } from './db.js'
+import { dbQuery, dbStudentsSetup, dbTest } from './db.js'
 
 
 const app = express()
 app.get('/', (req, res) => {
-    dbSetup();
+    dbStudentsSetup();
    let test = dbTest();
    console.log(test)
     res.test = test;
