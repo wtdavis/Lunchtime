@@ -8,14 +8,21 @@ const lunchtimeConnectionObj = {
     database: 'lunchtime'
 }
 
+export function dbReset () {
+    const connection = mysql.createConnection(lunchtimeConnectionObj)
+    connection.query("DROP TABLE students")
+    connection.query("DROP TABLE users")
+
+}
+
 export function dbUserSetup () {
     const connection = mysql.createConnection(lunchtimeConnectionObj)
-    let hash = bcrypt.hash(`${process.env.ADMINPASSWORD}`, 10, function () {
-        
-    })
     connection.connect();
     connection.query(`CREATE TABLE users (id index, username varchar(255), hash varchar(255), admin boolean`)
-    connection.query(`INSERT INTO users (username, hash, admin) VALUES ('${process.env.ADMINUSERNAME}', ,1)`)
+    let hash = bcrypt.hash(`${process.env.ADMINPASSWORD}`, 10, function (err, result) {
+        connection.query(`INSERT INTO users (username, hash, admin) VALUES ('${process.env.ADMINUSERNAME}', ${result}, 1)`)
+    })
+    connection.end()
 }
 
 export function dbStudentsSetup () {
@@ -23,7 +30,6 @@ export function dbStudentsSetup () {
     connection.connect()
     // connection.query()
     connection.query('USE lunchtime');
-    connection.query("DROP TABLE students;")
     connection.query("CREATE TABLE students (id int, studentFirstName varchar(255), studentLastName varchar(255), studentSocialist boolean);")
     connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('john', 'jacob', 0)")
         connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('sarah', 'jenkins', 1)")
