@@ -1,6 +1,8 @@
 import React from 'react';
 import { createRoot } from "react-dom/client"
+import { BrowserRouter, Route, Routes } from 'react-router';
 import App from "./src/App.jsx"
+
 
     function Test () {
         return (
@@ -14,4 +16,11 @@ import App from "./src/App.jsx"
 
     let root = createRoot(ele)
 
-    root.render(<App/>)
+    root.render(
+        <BrowserRouter>
+            <Routes>
+                <Route path='/admin' element={<Admin/>} />
+                <Route path='/' element={<App/>}/>
+            </Routes>
+        </BrowserRouter>
+    )

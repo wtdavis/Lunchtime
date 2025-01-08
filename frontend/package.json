@@ -16,5 +16,8 @@
     "react-dom": "^18.3.1",
     "redux": "^5.0.1",
     "vite": "^5.4.9"
+  },
+  "dependencies": {
+    "react-router": "^7.1.1"
   }
 }
