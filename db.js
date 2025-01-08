@@ -26,15 +26,16 @@ export function dbUserSetup () {
 }
 
 export function dbStudentsSetup () {
-        const connection = mysql.createConnection(lunchtimeConnectionObj)
+    const connection = mysql.createConnection(lunchtimeConnectionObj)
     connection.connect()
     // connection.query()
     connection.query('USE lunchtime');
     connection.query("CREATE TABLE students (id int, studentFirstName varchar(255), studentLastName varchar(255), studentSocialist boolean);")
     connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('john', 'jacob', 0)")
-        connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('sarah', 'jenkins', 1)")
-         connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('steven', 'evens', 1)")
-          connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('evelynda', 'evangelista', 0)")
+    connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('sarah', 'jenkins', 1)")
+    connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('steven', 'evens', 1)")
+    connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('evelynda', 'evangelista', 0)")
+    connection.query("INSERT INTO students (studentFirstName, studentLastName, studentSocialist) VALUES ('test', 'test', 1)")
     connection.end()
     console.log("db setup attempted")
 }
@@ -48,6 +49,7 @@ export function dbTest () {
     return res
 }
  
+
  export function dbQuery (name, status) {
 
     const connection = mysql.createConnection(lunchtimeConnectionObj);
@@ -67,10 +69,10 @@ export function dbTest () {
     }
 
 
-    connection.connect();
+    // connection.connect();
     
-    connection.query("");
+    // connection.query("")
     
-    connection.end();
+    // connection.end();
 }
 
