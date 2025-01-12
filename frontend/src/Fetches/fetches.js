@@ -1,3 +1,3 @@
 export function toggleFetch () {
-    fetch()
+    fetch(url)
 }
