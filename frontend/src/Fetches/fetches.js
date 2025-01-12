@@ -1,3 +1,3 @@
-export function toggleFetch () {
-    fetch(method, url, options)
+export function toggleFetch (studentName, options) {
+    fetch(method, `/api/student/`, options)
 }
