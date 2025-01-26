@@ -48,7 +48,7 @@ export function dbTest () {
     console.log("db test attempted")
     return res
 }
- 
+ 1
 
  export function dbQuery (name, status) {
 
