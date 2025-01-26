@@ -49,6 +49,7 @@ export function dbTest () {
     return res
 }
  1
+ 2
 
  export function dbQuery (name, status) {
 
