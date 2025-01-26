@@ -54,6 +54,7 @@ export function dbTest () {
  4
  5
  6
+ 6
 
  export function dbQuery (name, status) {
 
