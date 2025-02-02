@@ -39,10 +39,10 @@ export function dbStudentsSetup () {
     connection.end()
     console.log("db setup attempted")
 }
-
+1
 export function dbTest () {
     const connection = mysql.createConnection(lunchtimeConnectionObj);
-    connection.connect();
+    connection.connect();   
     let res = connection.query("SELECT * FROM students")
     connection.end()
     console.log("db test attempted")
