@@ -40,6 +40,7 @@ export function dbStudentsSetup () {
     console.log("db setup attempted")
 }
 1
+2
 export function dbTest () {
     const connection = mysql.createConnection(lunchtimeConnectionObj);
     connection.connect();   
