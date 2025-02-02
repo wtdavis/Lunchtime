@@ -43,6 +43,7 @@ export function dbStudentsSetup () {
 2
 3
 4
+4
 export function dbTest () {
     const connection = mysql.createConnection(lunchtimeConnectionObj);
     connection.connect();   
