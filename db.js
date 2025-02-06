@@ -54,14 +54,8 @@ export function dbTest () {
     console.log("db test attempted")
     return res
 }
- 1
- 2
- 3
- 4
- 5
- 6
- 6
- 7
+ 
+5
 
  export function dbQuery (name, status) {
 
